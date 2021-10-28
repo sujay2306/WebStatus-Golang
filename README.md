@@ -20,7 +20,7 @@ A simple project made out of Go-lang which enables you to check wheather the web
 
 ## Demonstration
 
-<a href="https://iamrajiv.github.ioRain-Simulation/">go run main.go</a>
+<a>go run main.go</a>
 
 
 
