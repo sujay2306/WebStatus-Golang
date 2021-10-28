@@ -11,6 +11,11 @@ A simple project which enables you to check wheather the website is accepting th
 ## About
 
 A simple project made out of Go-lang which enables you to check wheather the website is accepting the traffic and is it up or is the website has been crashed.
+<img src="assets/flowchart.png" height="200" width="700" />
+
+
+
+
 ## Demonstration
 
 <a href="https://iamrajiv.github.ioRain-Simulation/">go run main.go</a>
