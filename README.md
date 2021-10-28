@@ -1,5 +1,5 @@
 <div align="center">
-<img src="assets/websiteout.png" height="200" width="700" />
+<img src="assets/websiteout.png" height="auto" width="700" />
 <br />
 <h1>Website Status Checker</h1>
 <p>
