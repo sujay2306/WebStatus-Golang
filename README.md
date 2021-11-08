@@ -1,19 +1,25 @@
 <div align="center">
-<img src="assets/websiteout.png" height="200" width="700" />
+<img src="assets/websiteout.png" height="auto" width="700" />
 <br />
 <h1>Website Status Checker</h1>
 <p>
-A simple project which enables you to check wheather the website is accepting the traffic and is it up or is the website has been crashed
+A simple project which enables you to check wheather the website is up and working fine or is the website has been crashed.
 </p>
 
 </div>
 
 ## About
 
-A simple project made out of Go-lang which enables you to check wheather the website is accepting the traffic and is it up or is the website has been crashed.
+A project made out of Go-lang which enables you to check wheather the website is accepting the traffic and checks it is up or is the website has been crashed.
+
+
+<img src="assets/flowchart.png" height="auto" width="600" />
+
+
+
 ## Demonstration
 
-<a href="https://iamrajiv.github.ioRain-Simulation/">go run main.go</a>
+<a>go run main.go</a>
 
 
 
