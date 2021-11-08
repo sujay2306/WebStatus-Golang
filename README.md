@@ -10,7 +10,7 @@ A simple project which enables you to check wheather the website is up and worki
 
 ## About
 
-A project made out of Go-lang which enables you to check wheather the website is accepting the traffic and checks it is up or is the website has been crashed.
+A project made out of Go-lang which enables you to check wheather the website is accepting the traffic and checks it is up or is the website has been crashed. using Go routines and channels
 
 
 <img src="assets/flowchart.png" height="auto" width="600" />
