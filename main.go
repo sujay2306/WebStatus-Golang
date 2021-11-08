@@ -14,17 +14,27 @@ func main() {
 		"http://twitter.com",
 	}
 
-	for _, link := range links {
-		checkLink(link)
+	c := make(chan string) //channel to communicate with go routine and manage diffrent go routines
+
+	for _, given := range links {
+		go checkLink(given, c) //using go routine if yu just add go keyword it wont work
+	}
+	
+	for  {
+		go checkLink(<-c,c)
 	}
 }
 
-func checkLink(link string) {
+
+
+func checkLink(link string, c chan string) {     //c is a channel type string 
 	_, err :=http.Get(link)
-	 if err!=nil{
+	 if err!= nil{
 		fmt.Println(link,"might be down!")
+		c <- link
 		return
 	}
 
 	fmt.Println(link,"is up!")
+	c <- link
 }
