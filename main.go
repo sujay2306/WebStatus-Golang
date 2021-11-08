@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -20,8 +21,13 @@ func main() {
 		go checkLink(given, c) //using go routine if yu just add go keyword it wont work
 	}
 	
-	for  {
-		go checkLink(<-c,c)
+	for l:= range c { //infinite loop for request whenever a channel is created
+		
+		//function literal: is equivalent to anonymus function or lamda fun
+		go func(link string){
+			time.Sleep(5*time.Second)
+			checkLink(link, c)
+		}(l) //() is to call or invoke it 
 	}
 }
 
